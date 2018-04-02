@@ -23,6 +23,7 @@ public class comparator {
 
 	public static void main(String[] args) throws Exception
 	{
+		System.out.println("hai hello");
 
 		comparator c1=new comparator(6,"bunty",12);
 		comparator c2=new comparator(2, "kutti", 14);
