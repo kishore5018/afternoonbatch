@@ -7,11 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>HIBERNATE CRUD OPERATIONS</h1>
-<a href="register.jsp">REGISTER</a>
-<a href="fetch.jsp">FETCH</a>
+<h1>REGISTRATION FORM</h1>
+<form action="registerservlet" method="post">
+UserName:<input type="text" name="username"><br><br>
+PassWord:<input type="text" name="password"><br><br>
+Email::::<input type="text" name="email"><br><br>
+<input type="submit" value="REGISTER">
 
-
+</form>
 
 </body>
 </html>

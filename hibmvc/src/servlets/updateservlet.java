@@ -8,9 +8,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import dao.registerdao;
+import dao.updatedao;
 import userbean.userbean;
-@WebServlet("/registerservlet")
-public class registerservlet extends HttpServlet {
+@WebServlet("/updateservlet")
+public class updateservlet extends HttpServlet {
 	
 	
 	public void doPost(HttpServletRequest request,HttpServletResponse response) throws IOException {
@@ -19,8 +20,8 @@ public class registerservlet extends HttpServlet {
 	user.setUsername(request.getParameter("username"));
 	user.setPassword(request.getParameter("password"));
 	user.setEmail(request.getParameter("email"));
-	registerdao.register(user);	
-	response.sendRedirect("registersuccess.jsp");
+	updatedao.update(user);	
+	response.sendRedirect("fetch.jsp");
 		
 	}
 	

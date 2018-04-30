@@ -7,9 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h1>HIBERNATE CRUD OPERATIONS</h1>
-<a href="register.jsp">REGISTER</a>
-<a href="fetch.jsp">FETCH</a>
+<h1>REGISTER SUCCESS</h1>
+<a href="index.jsp">HOME</a>
+
 
 
 
