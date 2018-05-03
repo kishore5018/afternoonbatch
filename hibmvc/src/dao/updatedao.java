@@ -17,7 +17,7 @@ public class updatedao {
 			SessionFactory factory=cfg.buildSessionFactory();
 			Session session=factory.openSession();
 			Transaction transaction=session.beginTransaction();
-			Query query=session.createQuery("from userbean =:user");
+			Query query=session.createQuery("from userbean where username=:user");
 			query.setString("user", user.getUsername());
 			userbean user1=(userbean)query.uniqueResult();
 			user1.setPassword(user.getPassword());

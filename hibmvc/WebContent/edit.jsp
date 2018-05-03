@@ -22,12 +22,12 @@ SessionFactory factory=cfg.buildSessionFactory();
 Session session2=factory.openSession();
 Query query=session2.createQuery("from userbean where username=:user");
 query.setString("user", username);
-userbean user=(userbean)query.uniqueResult();
+userbean u=(userbean)query.uniqueResult();
 %>
 <form action="updateservlet" method="post">
-UserName:<input type="text" name="username" readonly value=<%=user.getUsername() %>><br><br>
-PassWord:<input type="text" name="password" value=<%=user.getPassword() %>><br><br>
-Email::::<input type="text" name="email" value=<%=user.getEmail() %>><br><br>
+UserName:<input type="text" name="username" readonly value=<%=u.getUsername() %>><br><br>
+PassWord:<input type="text" name="password" value=<%=u.getPassword() %>><br><br>
+Email::::<input type="text" name="email" value=<%=u.getEmail() %>><br><br>
 <input type="submit" value="UPDATE">
 
 </form>
